@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Appliance Energy Consumption</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo-container">
+        <img src="assets/img/logo.png" alt="Power Logo">
+        <span>Energy Tracker</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="televisions.html">Televisions</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h1>Appliance Energy Usage in Australia</h1>
+      <p>Understanding household energy usage is key to reducing both power bills and carbon footprints across Australia. Major appliances like refrigerators, televisions, and climate control systems make up a significant portion of residential energy demand.</p>
+    </section>
+
+    <!-- Interactive Calculator Extension -->
+    <section class="card">
+      <h2>Interactive Appliance Energy Calculator</h2>
+      <div class="calculator-grid">
+        <form id="energy-calculator" novalidate>
+          <div class="form-group">
+            <label for="appliance">Select or Enter Power (Watts)</label>
+            <input type="number" id="wattage" placeholder="e.g. 150" min="1" required>
+            <span class="error-message" id="watt-error">Please enter a valid power rating (> 0).</span>
+          </div>
+
+          <div class="form-group">
+            <label for="hours">Average Usage (Hours/Day)</label>
+            <input type="number" id="hours" step="0.1" min="0.1" max="24" placeholder="e.g. 5" required>
+            <span class="error-message" id="hours-error">Enter daily hours between 0.1 and 24.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="rate">Electricity Price (Cents per kWh)</label>
+            <input type="number" id="rate" step="0.1" value="30" min="1" required>
+            <span class="error-message" id="rate-error">Please enter a valid electricity rate.</span>
+          </div>
+
+          <button type="submit" class="submit-btn">Calculate Cost</button>
+        </form>
+
+        <div class="results-panel" id="results">
+          <h3>Calculated Estimates</h3>
+          <p>Fill out the form to calculate usage and costs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion FAQ -->
+    <section class="card">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="accordion-item">
+        <button class="accordion-btn">What is an Energy Rating Label? <span>+</span></button>
+        <div class="accordion-content">
+          <p>The Energy Rating Label shows how energy-efficient an appliance is compared to other models of the same size. More stars mean higher efficiency.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn">How can I reduce standby power consumption? <span>+</span></button>
+        <div class="accordion-content">
+          <p>Unplug devices or use smart power boards to completely eliminate standby power load when appliances are not in use.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> [Your Full Name] | Generative AI was used to assist with structural code templates and JS debugging.</p>
+  </footer>
+
+  <script src="assets/js/faq.js"></script>
+  <script src="assets/js/calculator.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
