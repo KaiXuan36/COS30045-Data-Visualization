@@ -3,7 +3,7 @@
 **Author:** Tan Kai Xuan  
 **Unit:** COS30045 Data Visualisation (Swinburne University)
 
-A multi-page interactive website built for Swinburne University demonstrating core HTML5, CSS3, vanilla JavaScript, and Git workflows hosted via Apache server infrastructure.
+A multi-page interactive website built for Swinburne University demonstrating core HTML5, CSS3, vanilla JavaScript, and Git workflows hosted via Apache server infrastructure. 
 
 ---
 
