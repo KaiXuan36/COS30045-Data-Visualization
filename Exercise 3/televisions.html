@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Televisions - Appliance Energy Consumption</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo-container">
+        <img src="assets/img/PowerIcon.png" alt="Power icon">
+        <span>Energy Tracker</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="televisions.html" class="active">Televisions</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card page-intro">
+      <span class="eyebrow">TV ENERGY DATA STORY</span>
+      <h1>What Makes a TV Use More Energy?</h1>
+      <p>
+        When choosing a television, consumers often focus on screen size and display technology.
+        These two stories use the TV energy dataset to show how those choices relate to annual
+        labelled energy consumption.
+      </p>
+    </section>
+
+    <!-- STORY 1 -->
+    <article class="story-section story-one">
+      <div class="story-heading">
+        <span class="story-number">Story 1</span>
+        <div>
+          <h2>Bigger Screen, Bigger Energy Use?</h2>
+          <p class="story-question">How does screen size impact energy consumption?</p>
+        </div>
+      </div>
+
+      <section class="card story-card">
+        <h3>Issue</h3>
+        <p>
+          Consumers may choose a larger TV for a better viewing experience without realising
+          that screen size can be associated with higher annual energy consumption.
+        </p>
+      </section>
+
+      <section class="card story-card">
+        <h3>Demonstrate the issue</h3>
+        <p>
+          The scatter plot shows a clear upward pattern: as screen size increases, labelled
+          energy consumption generally increases as well.
+        </p>
+        <figure class="chart-figure">
+          <img src="assets/img/charts/SP_Size_VS_Energy.png"
+               alt="Scatter plot showing TV screen size in inches against labelled energy consumption in kilowatt-hours per year">
+          <figcaption>
+            Screen size vs labelled energy consumption. Larger screens are generally positioned
+            higher on the energy-consumption axis.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="card story-card">
+        <h3>Make the comparison easier</h3>
+        <p>
+          Looking at every individual screen size creates a detailed but busy view. Grouping TVs
+          into small, medium and large categories makes the main pattern easier for a consumer to see.
+        </p>
+        <details class="supporting-chart">
+          <summary>View detailed energy use by individual screen size</summary>
+          <figure class="chart-figure compact-top">
+            <img src="assets/img/charts/BC_Energy_Size.png"
+                 alt="Bar chart showing average labelled energy consumption for individual TV screen sizes">
+            <figcaption>
+              Detailed view of average energy consumption for individual screen sizes.
+            </figcaption>
+          </figure>
+        </details>
+      </section>
+
+      <section class="card story-card highlight-card">
+        <h3>What the simplified view shows</h3>
+        <figure class="chart-figure">
+          <img src="assets/img/charts/BC_Energy_DiffScreen.png"
+               alt="Bar chart comparing average energy consumption for small, medium and large televisions">
+          <figcaption>
+            Average annual energy use rises strongly from small to medium to large TV categories.
+          </figcaption>
+        </figure>
+        <div class="takeaway">
+          <strong>Key takeaway:</strong>
+          <span>Larger TVs consume substantially more energy on average than smaller TVs.</span>
+        </div>
+      </section>
+
+      <section class="card recommendation-card">
+        <h3>Recommendation</h3>
+        <p>
+          Consumers who want to reduce electricity use should consider whether they need a larger
+          screen and compare the annual energy consumption shown on the TV's energy label before buying.
+        </p>
+      </section>
+    </article>
+
+    <!-- STORY 2 -->
+    <article class="story-section story-two">
+      <div class="story-heading">
+        <span class="story-number">Story 2</span>
+        <div>
+          <h2>Does Screen Technology Affect Energy Use?</h2>
+          <p class="story-question">How does screen type affect energy consumption?</p>
+        </div>
+      </div>
+
+      <section class="card story-card">
+        <h3>Issue</h3>
+        <p>
+          TV buyers can choose between LCD, LCD (LED) and OLED screens, but comparing technology
+          alone can be misleading because TVs of different technologies are not always the same size.
+        </p>
+      </section>
+
+      <section class="card story-card">
+        <h3>Demonstrate the issue</h3>
+        <p>
+          To make a fairer comparison, screen technologies are compared within the same small,
+          medium and large size categories rather than using one overall average for each technology.
+        </p>
+      </section>
+
+      <section class="card story-card">
+        <h3>Comparison approach</h3>
+        <p>
+          The grouped chart compares LCD, LCD (LED) and OLED within each TV-size category. This
+          helps show whether technology still makes a difference when screen size is considered.
+        </p>
+      </section>
+
+      <section class="card story-card highlight-card">
+        <h3>What the data shows</h3>
+        <figure class="chart-figure">
+          <img src="assets/img/charts/BC_Energy_SizeTech.png"
+               alt="Grouped bar chart comparing LCD, LCD LED and OLED energy consumption across large, medium and small TV sizes">
+          <figcaption>
+            Energy consumption differs by screen technology, but the pattern is not consistent
+            across every TV-size category.
+          </figcaption>
+        </figure>
+        <div class="takeaway">
+          <strong>Key takeaway:</strong>
+          <span>Screen technology matters, but it should be considered together with screen size.</span>
+        </div>
+      </section>
+
+      <section class="card recommendation-card">
+        <h3>Recommendation</h3>
+        <p>
+          Consumers should not choose a TV based on screen technology alone. Compare screen size,
+          display technology and the actual annual energy consumption on the energy label before
+          making a purchase decision.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tan Kai Xuan | Assisted by Generative AI (Gemini) for debugging and setup guidance.</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
