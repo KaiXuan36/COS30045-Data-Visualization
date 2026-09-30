@@ -1,5 +1,20 @@
 ## Exercise 4.1 Reflection & AI Acknowledgement
 
+**Author:** Tan Kai Xuan  
+**Unit:** COS30045 Data Visualisation (Swinburne University of Technology)
+
+An interactive SVG vector graphics layout demonstrating standard 2D plane coordinate systems, geometric primitives (`<rect>`, `<circle>`, `<polygon>`, `<path>`, and `<text>`), and group transformation positioning.
+
+---
+
+## Project Structure
+
+```text
+Exercise 4.1/
+├── index.html
+├── coordinates.png
+└── README.md
+
 ### Implementation Details
 - Created an SVG illustration containing primitive shapes (`<rect>`, `<circle>`, `<polygon>`, `<path>`, and `<text>`).
 - Implemented the `<g>` group tag with `transform="translate()"` to position and style both house windows consistently.
