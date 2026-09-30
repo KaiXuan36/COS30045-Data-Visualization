@@ -17,4 +17,4 @@ d3.select("svg")
   .attr("width", 150)
   .attr("height", 50)
   .attr("rx", 6) // Smooth rounded corners
-  .style("fill", "#f6a623"); // Matches your theme accent yellow
+  .style("fill", "#f6a623"); 
