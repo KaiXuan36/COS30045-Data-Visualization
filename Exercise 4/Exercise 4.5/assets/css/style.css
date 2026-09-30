@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.responsive-svg-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.responsive-svg-container h1 {
+    margin-bottom: 15px;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
