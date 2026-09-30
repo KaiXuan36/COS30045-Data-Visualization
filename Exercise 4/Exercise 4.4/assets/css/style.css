@@ -1,0 +1,38 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+    color: #333333;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    color: #7a5d32;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Responsive D3 SVG Container */
+.responsive-svg-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.responsive-svg-container svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
