@@ -12,23 +12,34 @@ Exercise 5/
 ├── assets/
 │   ├── css/
 │   │   └── style.css
-│   └── img/
-│       └── PowerIcon.png
+│   ├── img/
+│   └── js/
+│       ├── calculator.js
+│       └── faq.js
 ├── Lab4/
-│   └── ...
-└── Lab5/
-    ├── css/
-    │   └── style.css
-    ├── data/
-    │   ├── ARE_Spot_Prices.csv
-    │   ├── Data_exercise 5.1-1.csv
-    │   └── Data_exercise 5.3.csv
-    ├── js/
-    │   ├── bar-chart.js
-    │   ├── scatter-chart.js
-    │   └── donut-chart.js
-    ├── Lab5.html
-    └── README.md
+│   ├── data/
+│   │   ├── 2026 TV Data.zip
+│   │   └── tvBrandCount.csv
+│   ├── js/
+│   │   └── main.js
+│   ├── Lab4.html
+│   └── README.md
+├── Lab5/
+│   ├── data/
+│   │   ├── ARE_Spot_Prices.csv
+│   │   ├── Data_exercise 5.1-1.csv
+│   │   └── Data_exercise 5.3.csv
+│   ├── js/
+│   │   ├── bar-chart.js
+│   │   ├── donut-chart.js
+│   │   └── scatter-chart.js
+│   ├── Lab5.html
+│   └── README.md
+├── about.html
+├── index.html
+├── README.md
+├── READMEold.md
+└── televisions.html
 ```
 
 ---
