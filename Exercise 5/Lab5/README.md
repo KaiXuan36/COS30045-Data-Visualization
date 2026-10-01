@@ -1,53 +1,89 @@
-# Exercise 5 – Multi-Chart Webpage
+# Exercise 5: Multi-Chart D3.js Visualisation Webpage
 
-## Aim
-Create a variety of different chart types using **D3.js**.
+## Overview & Aim
+This project implements a multi-chart web application using **D3.js (v7)** integrated into the **Energy Tracker** website layout. The objective of this exercise is to transform raw CSV energy datasets into scalable, interactive, and responsive SVG visualisations.
 
-## Purpose
-In previous exercises, we created simple charts such as a horizontal bar chart. In this exercise, you will extend your skills by building multiple chart types and presenting them on a webpage.
+---
 
-This activity focuses on using **D3 to visualise different types of data** and understanding when different charts are appropriate.
+## Project Structure
 
-## Charts to Create
+```text
+Exercise 5/
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── img/
+│       └── PowerIcon.png
+├── Lab4/
+│   └── ...
+└── Lab5/
+    ├── css/
+    │   └── style.css
+    ├── data/
+    │   ├── ARE_Spot_Prices.csv
+    │   ├── Data_exercise 5.1-1.csv
+    │   └── Data_exercise 5.3.csv
+    ├── js/
+    │   ├── bar-chart.js
+    │   ├── scatter-chart.js
+    │   └── donut-chart.js
+    ├── Lab5.html
+    └── README.md
+```
 
-Using the provided **TV energy consumption dataset** (or your own dataset), your webpage must include the following chart types:
+---
 
-- **Scatter Plot**  
-  Energy consumption vs star rating.
+## Implemented Visualisations
 
-- **Donut Chart**  
-  Energy consumption for different screen technologies across all TVs combined.
+### 1. Exercise 5.1: Bar Chart
+- **File:** `js/bar-chart.js`
+- **Data Source:** `data/Data_exercise 5.1-1.csv`
+- **Description:** Visualises mean annual energy consumption (kWh/year) grouped across different TV screen technologies (LED, OLED, LCD).
+- **Technical Features:**
+  - `d3.scaleBand()` for discrete category positioning with padding.
+  - `d3.scaleLinear()` for continuous vertical height scaling.
+  - Value labels dynamically centered above each bar using centroid positioning.
 
-- **Bar Chart**  
-  Energy consumption for different screen technologies for **55-inch TVs only**.
+### 2. Exercise 5.2: Line & Scatter Plot Chart
+- **File:** `js/scatter-chart.js`
+- **Data Source:** `data/ARE_Spot_Prices.csv`
+- **Description:** Illustrates electricity spot price trends annually from 1998 to 2024.
+- **Technical Features:**
+  - `d3.scaleLinear()` for both time (years) and monetary axes.
+  - `d3.line()` generator for continuous path plotting.
+  - SVG circle element overlays for individual data point markers.
 
-- **Line Chart**  
-  Spot power prices from **1998 to 2024** (either plot the average or include a line for each state).
+### 3. Exercise 5.3: Donut Chart
+- **File:** `js/donut-chart.js`
+- **Data Source:** `data/Data_exercise 5.3.csv`
+- **Description:** Displays proportional breakdown of TV models categorized by screen size (Small, Medium, Large).
+- **Technical Features:**
+  - `d3.pie()` slice angle computation with preserved data ordering.
+  - `d3.arc()` inner radius (55%) and outer radius (95%) configuration.
+  - Centroid positioning (`arcGenerator.centroid(d)`) for slice labels.
 
-You may use the **provided datasets** or your **own dataset**, but your webpage must include **one example of each chart type**.
+---
 
-## Preparation
+## Reflection
 
-Before starting this exercise, it is recommended that you:
+### Key Learnings
+1. **D3 Data Join Pattern:** Mastered the modern `.data().join()` syntax for binding structured array objects directly to DOM SVG nodes (`rect`, `path`, `circle`, `text`).
+2. **SVG Coordinates & Margins:** Understood SVG coordinate systems where $(0,0)$ originates at the top-left, requiring inverted ranges for Y-axes (`[innerHeight, 0]`) and calculated translation margins.
+3. **Layout Generators:** Learned how D3 layout helpers (`d3.pie()` and `d3.arc()`) translate raw numerical values into geometric angle descriptors and SVG path string commands (`d="..."`).
 
-- Review this week's **lecture slides**
-- Review **Chapter 4 and Chapter 5 of Dufour and Meeks (2024)**
+### Challenges & Solutions
+- **Relative Path Resolution:** Experienced file path resolution issues when loading CSV files asynchronously across nested directory structures (`Lab5/data/` vs root). Resolved by standardizing paths relative to `Lab5.html`.
+- **Label Centering on Arcs:** Placing text inside pie slices required calculating exact geometric midpoints. Utilized `arcGenerator.centroid(d)` combined with `text-anchor: middle` and `dominant-baseline: middle` attributes.
 
-## Instructions
+---
 
-Use the **forked repository that you created earlier for this unit**.
+## Generative AI Declaration
 
-1. Open your existing **forked repository**.
-2. Navigate to the **Exercise 5 folder**.
-3. Add your code and files for this exercise inside that folder.
-4. Build a webpage that displays the required charts using **D3.js**.
-5. Commit and push your changes regularly to your GitHub repository.
+In accordance with academic integrity guidelines, **Generative AI tools (Google Gemini / ChatGPT)** were utilized during this project for the following tasks:
 
-## Submission
+1. **Path & DOM Binding Verification:** Identifying ID mismatched selectors between HTML containers (`#line-chart`, `#scatter-chart`) and D3 selections.
+2. **Formatting & Documentation Structure:** Refining structure for documentation and code formatting.
 
-Your **forked repository** will serve as your submission.
+*All AI-generated code snippets were manually reviewed, tested, modified to fit the existing codebase, and integrated by the author.*
 
-Ensure that:
-- All Exercise 5 files are inside the **Exercise 5 folder**
-- Your code is pushed to GitHub
-- Your repository link is submitted through the submission system.
+---
