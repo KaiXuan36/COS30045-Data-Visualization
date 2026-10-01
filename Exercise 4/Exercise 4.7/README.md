@@ -1,47 +1,39 @@
-Exercise 4.7
+# Appliance Energy Consumption Website
 
 **Author:** Tan Kai Xuan  
-**Unit:** COS30045 Data Visualisation (Swinburne University)
+**Unit:** COS30045 Data Visualisation  
+**University:** Swinburne University of Technology
 
-Extending Exercise 4.6 by binding SVG `<g>` group elements to data items, offsetting horizontal bar origins to make 100px left margin space for brand name text labels (`text-anchor: end`), and appending category count numbers to the right of each rendered bar.
+This project is a multi-page website developed to communicate insights about television energy consumption in the Australian market.
+
+The website was originally created in Exercise 0.2 to demonstrate HTML, CSS and JavaScript skills. For Exercise 3, the website has been extended to present a data story using visualisations created from the TV Energy Consumption dataset.
 
 ---
 
 ## Project Structure
 
 ```text
-Exercise 4.7/
+/
+
 ├── index.html
-├── assets/
-│   └── css/
-│       └── style.css
-├── data/
-│   └── tvBrandCount.csv
-├── js/
-│   └── main.js
-└── README.md
-```
+├── televisions.html
+├── about.html
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   ├── calculator.js
+    │   └── faq.js
+    └── img/
+        ├── PowerIcon.png
+        ├── SP_Size_VS_Energy.png
+        ├── BC_Energy_Size.png
+        ├── BC_Energy_DiffScreen.png
+        └── BC_Energy_SizeTech.png
 
----
+## AI Declaration – Exercise 3
 
-## Generative AI Reflection
+ChatGPT was used to assist with planning the two data stories, improving the wording of explanations and recommendations, updating the website layout and colour theme, and preparing the README documentation.
 
-- **Tools Used:** Gemini
-- **Purpose:** Assistance in structuring D3 `<g>` group transformations (`translate`), aligning text element baselines, and setting proper `text-anchor` positioning attributes.
-- **Changes/Adaptations:** Reviewed and verified all label positioning coordinates (`x`, `y`, `text-anchor`) to ensure clear visual alignment and readability across all 28 TV brand items.
-- **Learnings:** Practiced grouping SVG elements with D3 `.join("g")`, applying coordinate offsets with `transform: translate`, and placing textual labels dynamically relative to scale outputs.
-- **Limitations:** Needed manual fine-tuning of `xScale.range()` parameters to prevent text overlap along both left and right margins.
-
----
-
-## Exercise 4.7 Reflection & AI Declaration
-
-### Implementation Details
-- Shifted `xScale` start offset from `0` to `100` (`range([100, 420])`), creating a dedicated 100px left margin for brand labels.
-- Grouped bars and labels together using `<g>` elements translated by `yScale(d.brand)` along the Y-axis.
-- Added brand text labels right-aligned at `x = 90` with `text-anchor: end` and count values offset to `xScale(d.count) + 5`.
-
-### AI Declaration
-GenAI (Gemini) was used to:
-1. Provide guidance on `<g>` element translation and SVG text baseline alignment.
-2. Troubleshoot coordinate math for text label placement.
+The KNIME workflow, data processing, and visualisations were based on my own work. AI suggestions were reviewed and adjusted to match my actual results and the Exercise 3 requirements.
