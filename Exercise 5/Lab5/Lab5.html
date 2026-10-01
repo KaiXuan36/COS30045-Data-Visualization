@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 5 - Visualisations</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- D3.js v7 CDN -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <a href="../index.html" class="logo-container">
+        <img src="../assets/img/PowerIcon.png" alt="PowerIcon">
+        <span>Energy Tracker</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../televisions.html">Televisions</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../Lab4/Lab4.html">Lab 4 (4.7)</a></li>
+        <li><a href="Lab5.html" class="active">Lab 5</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Card -->
+  <main>
+    <section class="card">
+      <h1>Lab 5 Exercises</h1>
+
+      <!-- Exercise 5.1 -->
+      <section class="chart-section" style="margin-bottom: 40px;">
+        <h2>Exercise 5.1: TV Screen Tech Energy Consumption</h2>
+        <p>Mean energy consumption across LED, OLED, and LCD screen technologies.</p>
+        <div id="bar-chart"></div>
+      </section>
+
+      <!-- Exercise 5.2 -->
+      <section class="chart-section" style="margin-bottom: 40px;">
+        <h2>Exercise 5.2: Average Spot Prices Over Time</h2>
+        <p>Annual spot prices (1998–2024) visualized with line and scatter points.</p>
+        <div id="line-chart"></div>
+      </section>
+
+      <!-- Exercise 5.3 -->
+      <section class="chart-section">
+        <h2>Exercise 5.3: TV Screen Size Donut Chart</h2>
+        <p>Proportion of Small, Medium, and Large TV models.</p>
+        <div id="donut-chart"></div>
+      </section>
+
+    </section>
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/bar-chart.js"></script>
+  <script src="js/scatter-chart.js"></script>
+  <script src="js/donut-chart.js"></script>
+
+</body>
+</html>

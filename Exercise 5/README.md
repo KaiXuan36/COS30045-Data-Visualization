@@ -1,53 +1,39 @@
-# Exercise 5 – Multi-Chart Webpage
+# Appliance Energy Consumption Website
 
-## Aim
-Create a variety of different chart types using **D3.js**.
+**Author:** Tan Kai Xuan  
+**Unit:** COS30045 Data Visualisation  
+**University:** Swinburne University of Technology
 
-## Purpose
-In previous exercises, we created simple charts such as a horizontal bar chart. In this exercise, you will extend your skills by building multiple chart types and presenting them on a webpage.
+This project is a multi-page website developed to communicate insights about television energy consumption in the Australian market.
 
-This activity focuses on using **D3 to visualise different types of data** and understanding when different charts are appropriate.
+The website was originally created in Exercise 0.2 to demonstrate HTML, CSS and JavaScript skills. For Exercise 3, the website has been extended to present a data story using visualisations created from the TV Energy Consumption dataset.
 
-## Charts to Create
+---
 
-Using the provided **TV energy consumption dataset** (or your own dataset), your webpage must include the following chart types:
+## Project Structure
 
-- **Scatter Plot**  
-  Energy consumption vs star rating.
+```text
+/
 
-- **Donut Chart**  
-  Energy consumption for different screen technologies across all TVs combined.
+├── index.html
+├── televisions.html
+├── about.html
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   ├── calculator.js
+    │   └── faq.js
+    └── img/
+        ├── PowerIcon.png
+        ├── SP_Size_VS_Energy.png
+        ├── BC_Energy_Size.png
+        ├── BC_Energy_DiffScreen.png
+        └── BC_Energy_SizeTech.png
 
-- **Bar Chart**  
-  Energy consumption for different screen technologies for **55-inch TVs only**.
+## AI Declaration – Exercise 3
 
-- **Line Chart**  
-  Spot power prices from **1998 to 2024** (either plot the average or include a line for each state).
+ChatGPT was used to assist with planning the two data stories, improving the wording of explanations and recommendations, updating the website layout and colour theme, and preparing the README documentation.
 
-You may use the **provided datasets** or your **own dataset**, but your webpage must include **one example of each chart type**.
-
-## Preparation
-
-Before starting this exercise, it is recommended that you:
-
-- Review this week's **lecture slides**
-- Review **Chapter 4 and Chapter 5 of Dufour and Meeks (2024)**
-
-## Instructions
-
-Use the **forked repository that you created earlier for this unit**.
-
-1. Open your existing **forked repository**.
-2. Navigate to the **Exercise 5 folder**.
-3. Add your code and files for this exercise inside that folder.
-4. Build a webpage that displays the required charts using **D3.js**.
-5. Commit and push your changes regularly to your GitHub repository.
-
-## Submission
-
-Your **forked repository** will serve as your submission.
-
-Ensure that:
-- All Exercise 5 files are inside the **Exercise 5 folder**
-- Your code is pushed to GitHub
-- Your repository link is submitted through the submission system.
+The KNIME workflow, data processing, and visualisations were based on my own work. AI suggestions were reviewed and adjusted to match my actual results and the Exercise 3 requirements.
