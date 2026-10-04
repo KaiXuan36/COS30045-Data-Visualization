@@ -1,0 +1,59 @@
+/* Box sizing normalization */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Outer SVG chart responsive wrapper */
+.responsive-svg-container {
+    width: 100%;
+    max-width: 900px;
+    min-height: 400px;
+    margin: 20px 0;
+}
+
+/* Axis label typography */
+.axis-label {
+    font-family: inherit;
+    font-size: 14px;
+    fill: #5a3e2b;
+}
+
+
+/*   FILTER BUTTONS CONTAINER & STYLING (EXERCISE 6.2) */
+   
+
+/* Flexbox wrapper for spacing out filter buttons */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Base style for inactive filter buttons (Burnt Orange Theme) */
+.filter {
+    background-color: #d2691e;           /* Default orange background */
+    color: #ffffff;                       /* White text */
+    border: none;                         /* Remove default border */
+    padding: 8px 22px;                    /* Internal padding */
+    font-size: 15px;                      /* Font size */
+    font-weight: 700;                     /* Bold font weight */
+    border-radius: 6px;                   /* Soft rounded corners */
+    cursor: pointer;                      /* Pointer cursor on hover */
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover effect on filter buttons */
+.filter:hover {
+    background-color: #e07b30;           /* Lighter orange on hover */
+}
+
+/* Active toggled state for selected filter button */
+.filter.active {
+    background-color: #f7c568;           /* Yellow active state */
+    color: #ffffff;                       /* White text */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}

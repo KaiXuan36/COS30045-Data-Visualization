@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 6 - Visualisations</title>
+
+  <!-- Global & Lab Stylesheets -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/visualisation.css">
+
+  <!-- D3.js Library v7 -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <a href="../index.html" class="logo-container">
+        <img src="../assets/img/PowerIcon.png" alt="PowerIcon">
+        <span>Energy Tracker</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../televisions.html">Televisions</a></li>
+        <li><a href="../about.html">About Us</a></li>
+        <li><a href="../Lab4/Lab4.html">Lab 4 (4.7)</a></li>
+        <li><a href="../Lab5/Lab5.html">Lab 5</a></li>
+        <li><a href="Lab6.html" class="active">Lab 6</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h1>Lab 6 Exercises</h1>
+
+      <!-- Exercise 6.1 & 6.2 Section -->
+      <section class="chart-section" style="margin-bottom: 40px;">
+        <h2>Exercise 6.2: TV Energy Consumption Filtered Histogram</h2>
+        <p>Most TVs on sale in Australia are LED and they vary considerably in energy consumption.</p>
+
+        <div id="filters_screen" class="filter-container"></div>
+        <div id="filters_size" class="filter-container"></div>
+        <div id="histogram" class="responsive-svg-container"></div>
+      </section>
+
+      <!-- Exercise 6.3 & 6.4 Section -->
+      <section class="chart-section">
+        <h2>Exercise 6.3 & 6.4: Interactive Scatterplot with Tooltips</h2>
+        <div id="scatterplot" class="responsive-svg-container"></div>
+      </section>
+
+      <!-- Data Source -->
+      <div class="body" style="margin-top: 30px;">
+        <h3>Data source</h3>
+        <p>
+          <a href="https://data.gov.au/data/dataset/energy-rating-for-household-appliances" target="_blank">
+            Energy Rating Data for household appliances – Televisions
+          </a><br>
+          Downloaded Jan 2026
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Script Files in Execution Order -->
+  <script src="js/shared-constants.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/histogram.js"></script>
+  <script src="js/scatterplot.js"></script>
+  <script src="js/load-data.js"></script>
+
+</body>
+</html>

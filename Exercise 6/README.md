@@ -1,65 +1,39 @@
-# Exercise 6 – Interactive Visualisations
+# Appliance Energy Consumption Website
 
-## Overview
-In this exercise you will build **interactive data visualisations using D3.js**. Interaction allows users to explore the data and gain deeper insights through features such as filtering and tooltips.
+**Author:** Tan Kai Xuan  
+**Unit:** COS30045 Data Visualisation  
+**University:** Swinburne University of Technology
 
-Use the **same repository you forked earlier for this unit** and complete this exercise inside the **Exercise 6 folder**.
+This project is a multi-page website developed to communicate insights about television energy consumption in the Australian market.
 
----
-
-## Exercise 6.1 – Interactive Histogram: Filtering
-
-### Aim
-Build a histogram and add **interactive filters**.
-
-### Purpose
-Interaction is one of the key advantages of visualisations on the web. In this exercise you will build a **histogram using the TV dataset** and allow users to filter the data.
-
-Users should be able to explore energy consumption for different TV screen technologies such as:
-
-- LCD
-- LED
-- OLED
-
-### Preparation
-Before starting, review:
-
-- This week's lecture slides
-- **Chapter 7 of Dufour and Meeks (2024)**
+The website was originally created in Exercise 0.2 to demonstrate HTML, CSS and JavaScript skills. For Exercise 3, the website has been extended to present a data story using visualisations created from the TV Energy Consumption dataset.
 
 ---
 
-## Exercise 6.2 – Interactive Scatterplot: Tooltips
+## Project Structure
 
-### Aim
-Build a scatterplot and add **tooltips and colour coding**.
+```text
+/
 
-### Purpose
-Tooltips are one of the most common interactive features in data visualisations. In this exercise you will create a **scatterplot using the TV dataset**.
+├── index.html
+├── televisions.html
+├── about.html
+├── README.md
+└── assets/
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   ├── calculator.js
+    │   └── faq.js
+    └── img/
+        ├── PowerIcon.png
+        ├── SP_Size_VS_Energy.png
+        ├── BC_Energy_Size.png
+        ├── BC_Energy_DiffScreen.png
+        └── BC_Energy_SizeTech.png
 
-The chart should allow users to explore the relationship between:
+## AI Declaration – Exercise 3
 
-- Energy consumption
-- Star rating
-- Screen size
-- Screen technology
+ChatGPT was used to assist with planning the two data stories, improving the wording of explanations and recommendations, updating the website layout and colour theme, and preparing the README documentation.
 
-Tooltips should display additional information such as **screen size**, and colours should represent **screen type**.
-
-### Preparation
-Before starting, review:
-
-- This week's lecture slides
-- **Chapter 7 of Dufour and Meeks (2024)**
-
----
-
-## Instructions
-
-1. Open your **existing forked repository**.
-2. Navigate to the **Exercise 6 folder**.
-3. Add the files needed to implement the histogram and scatterplot.
-4. Implement the required interactive features using **D3.js**.
-5. Commit and push your changes regularly to GitHub.
-
-Your forked repository will serve as your **submission record**.
+The KNIME workflow, data processing, and visualisations were based on my own work. AI suggestions were reviewed and adjusted to match my actual results and the Exercise 3 requirements.

@@ -1,0 +1,12 @@
+/* Axis line and tick mark stroke color */
+.axis path,
+.axis line {
+    stroke: #5a3e2b;
+}
+
+/* Axis text font properties */
+.axis text {
+    font-family: inherit;
+    font-size: 12px;
+    fill: #5a3e2b;
+}
